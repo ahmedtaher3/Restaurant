@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textViewBluetoothList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Bluetooth List"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ListView
+                android:id="@+id/listViewPairedDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/listview_line" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/textViewIPAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="IP Address : " />
+
+                <EditText
+                    android:id="@+id/editTextIPAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:digits="1234567890."
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxAsyncMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:checked="true"
+                android:text="Async Mode" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPrinterOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_marginTop="5dp"
+            android:text="Printer Open" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+</ScrollView>

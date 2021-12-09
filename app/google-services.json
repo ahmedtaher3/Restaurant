@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "460371281135",
+    "project_id": "restaurant-a9c13",
+    "storage_bucket": "restaurant-a9c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460371281135:android:92f5687b97b700b5b2871a",
+        "android_client_info": {
+          "package_name": "taher.restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460371281135-atujripspn5r5praqjknuc0h3n0e4pra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNEZAnfF0tkvS0wthQyxNPntWI13mRTE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460371281135-atujripspn5r5praqjknuc0h3n0e4pra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
